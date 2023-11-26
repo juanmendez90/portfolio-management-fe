@@ -9,7 +9,7 @@ export default function Home() {
                         Portfolio Management
                     </h1>
                     <Button
-                        href="/api/auth/login?returnTo=/dashboard"
+                        href="/api/auth/login?returnTo=/main/dashboard"
                         color="primary-dark"
                         fullWidth
                     >
