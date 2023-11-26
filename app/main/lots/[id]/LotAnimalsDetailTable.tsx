@@ -28,8 +28,8 @@ export function LotAnimalDetailTable({
                     <Table.Body>
                         {animals.map((item) => {
                             return (
-                                <Table.Row key={item.id}>
-                                    <Table.Cell>{item.id}</Table.Cell>
+                                <Table.Row key={item.ring}>
+                                    <Table.Cell>{item.ring}</Table.Cell>
                                     <Table.Cell center>
                                         {item.gender}
                                     </Table.Cell>

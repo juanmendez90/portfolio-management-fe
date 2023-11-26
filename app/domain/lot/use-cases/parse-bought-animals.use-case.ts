@@ -9,7 +9,7 @@ export function ParseBoughtAnimals() {
         execute: async ({ file }: ParseBoughtAnimalsProps) => {
             // Passing file data (event.target.files[0]) to parse using Papa.parse
             const promise = new Promise((resolve) => {
-                const results = Papa.parse(file, {
+                Papa.parse(file, {
                     worker: true,
                     header: false,
                     skipEmptyLines: true,
@@ -22,7 +22,7 @@ export function ParseBoughtAnimals() {
             const animals = result.map((item, index) => {
                 return {
                     age: item[2],
-                    id: item[0],
+                    ring: item[0],
                     gender: item[1],
                 };
             });

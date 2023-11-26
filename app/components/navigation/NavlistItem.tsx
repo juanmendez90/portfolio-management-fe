@@ -2,8 +2,8 @@
 import clsx from 'clsx';
 import { usePathname } from 'next/navigation';
 import { ReactNode, useContext, useMemo } from 'react';
-import { NavContext } from '../../main/layout';
 import Link from 'next/link';
+import { NavContext } from '@/app/main/layout-context';
 
 interface NavListItemProps {
     children: ReactNode;

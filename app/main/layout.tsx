@@ -6,13 +6,7 @@ import { IconButton } from '../components/inputs/IconButton';
 import { Drawer } from '../components/navigation/Drawer';
 import { UserBox } from '../components/navigation/UserBox';
 import { NavList } from '../components/navigation/NavList';
-
-interface NavContextProps {
-    isOpen?: boolean;
-    onChange?: (value: boolean) => any;
-}
-
-export const NavContext = createContext<NavContextProps>({});
+import { NavContext } from './layout-context';
 
 export default function DashboardLayout({
     children, // will be a page or nested layout

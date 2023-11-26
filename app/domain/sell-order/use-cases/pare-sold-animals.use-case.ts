@@ -33,7 +33,7 @@ export function ParseSoldAnimalsUseCase() {
                 const ring = removeLettersAndLeftZeroFromRing(item[1]);
 
                 return {
-                    id: ring,
+                    ring,
                 };
             });
             return animals;

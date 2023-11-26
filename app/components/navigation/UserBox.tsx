@@ -11,7 +11,7 @@ import { useUser } from '@auth0/nextjs-auth0/client';
 import { Menu, Transition } from '@headlessui/react';
 import { Fragment, useContext } from 'react';
 import clsx from 'clsx';
-import { NavContext } from '@/app/main/layout';
+import { NavContext } from '@/app/main/layout-context';
 
 function Skeleton() {
     return (

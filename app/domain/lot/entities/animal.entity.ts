@@ -20,6 +20,7 @@ export enum AnimalStatus {
 
 export interface AnimalEntity {
     id?: string;
+    ring?: string;
     age?: string;
     dateSold?: string;
     gender?: Gender;
