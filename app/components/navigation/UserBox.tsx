@@ -1,17 +1,10 @@
 'use client';
-import {
-    UserAvatarFilled,
-    ChevronRight,
-    Edit,
-    DocumentPreliminary,
-    Archive,
-    Logout,
-} from '@carbon/icons-react';
-import { useUser } from '@auth0/nextjs-auth0/client';
-import { Menu, Transition } from '@headlessui/react';
-import { Fragment, useContext } from 'react';
-import clsx from 'clsx';
 import { NavContext } from '@/app/main/layout-context';
+import { useUser } from '@auth0/nextjs-auth0/client';
+import { ChevronRight, Logout, UserAvatarFilled } from '@carbon/icons-react';
+import { Menu, Transition } from '@headlessui/react';
+import clsx from 'clsx';
+import { Fragment, useContext } from 'react';
 
 function Skeleton() {
     return (
